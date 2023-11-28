@@ -1,7 +1,7 @@
 import gymnasium as gym
 import numpy as np
 from collections import defaultdict
-env = gym.make("Blackjack-v1", render_mode="human") # Initializing environments
+env = gym.make('Blackjack-v1', natural=False, sab=False)
 #env.metadata['render_fps'] = .5
 
 Q = defaultdict(lambda: np.zeros(env.action_space.n))
